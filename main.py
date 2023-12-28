@@ -48,22 +48,22 @@ while 1:
                 frost += np.random.randint(1, 7)
                 thunder += np.random.randint(1, 9)
                 thunderMove += (np.random.randint(1, 9) + np.random.randint(1, 9))
-                if ("1c" in inputString):
-                    slashing += np.random.randint(1, 7)
-                    frost += np.random.randint(1, 7)
-                    thunder += np.random.randint(1, 9)
-                    thunderMove += (np.random.randint(1, 9) + np.random.randint(1, 9))
+            elif ("1c" in inputString):
+                slashing += np.random.randint(1, 7) + np.random.randint(1, 7) + GENDELF_Dmg
+                frost += np.random.randint(1, 7) + np.random.randint(1, 7)
+                thunder += np.random.randint(1, 9) + np.random.randint(1, 9)
+                thunderMove += np.random.randint(1, 9) + np.random.randint(1, 9) + np.random.randint(1, 9) + np.random.randint(1, 9)
             if ("2" in inputString):
                 slashing += np.random.randint(1, 7)
-                if ("2c" in inputString):
-                    slashing += np.random.randint(1, 7)
-                    slashing += 7
+            elif ("2c" in inputString):
+                slashing += np.random.randint(1, 7) + np.random.randint(1, 7)
+                slashing += 7
             if ("3" in inputString):
                 slashing += np.random.randint(1, 7) + GENDELF_Dmg
                 frost += np.random.randint(1, 7)
-                if ("3c" in inputString):
-                    slashing += np.random.randint(1, 7)
-                    frost += np.random.randint(1, 7)
+            elif ("3c" in inputString):
+                slashing += np.random.randint(1, 7) + np.random.randint(1, 7) + GENDELF_Dmg
+                frost += np.random.randint(1, 7) + np.random.randint(1, 7)
 
             print(f"Slashing: {slashing}")
             print(f"Frost: {frost}")
@@ -78,22 +78,22 @@ while 1:
                 frost += np.random.randint(1, 7)
                 fire += np.random.randint(1, 9)
                 fireLeap += np.random.randint(1, 9) + 3
-                if ("1c" in inputString):
-                    slashing += np.random.randint(1, 7)
-                    frost += np.random.randint(1, 7)
-                    fire += np.random.randint(1, 9)
-                    fireLeap += np.random.randint(1, 9) + 3
+            elif ("1c" in inputString):
+                slashing += np.random.randint(1, 7) + np.random.randint(1, 7) + GENDELF_Dmg
+                frost += np.random.randint(1, 7) + np.random.randint(1, 7)
+                fire += np.random.randint(1, 9) + np.random.randint(1, 9)
+                fireLeap += np.random.randint(1, 9) + np.random.randint(1, 9) + 3
             if ("2" in inputString):
                 slashing += np.random.randint(1, 7)
-                if ("2c" in inputString):
-                    slashing += np.random.randint(1, 7)
-                    slashing += 7
+            elif ("2c" in inputString):
+                slashing += np.random.randint(1, 7) + np.random.randint(1, 7)
+                slashing += 7
             if ("3" in inputString):
                 slashing += np.random.randint(1, 7) + GENDELF_Dmg
                 frost += np.random.randint(1, 7)
-                if ("3c" in inputString):
-                    slashing += np.random.randint(1, 7)
-                    frost += np.random.randint(1, 7)
+            elif ("3c" in inputString):
+                slashing += np.random.randint(1, 7) + np.random.randint(1, 7) + GENDELF_Dmg
+                frost += np.random.randint(1, 7) + np.random.randint(1, 7)
 
             print(f"Slashing: {slashing}")
             print(f"Frost: {frost}")
