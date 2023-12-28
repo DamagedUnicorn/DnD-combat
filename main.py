@@ -18,7 +18,7 @@ def nl():
     print("\n")
 
 # Read character
-nl()
+#nl()
 character = input("Character: ")
 if (character == "gendelf"): # if using python >= 3.10 this could be refactored to a match statement
     pass
