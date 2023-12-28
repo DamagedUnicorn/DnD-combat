@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # Libraries
 import numpy as np
 
